@@ -10,7 +10,11 @@
     <h2>Virtual QWERTY keyboard</h2>
     <div class="container">
       <div class="textareaDiv">
-        <textarea id="textArea" class="textArea" placeholder="TEXT AREA"></textarea>
+        <textarea
+          id="textArea"
+          class="textArea"
+          placeholder="TEXT AREA"
+        ></textarea>
       </div>
       <div class="keyboardDiv">
         <div class="flex-wrapper-0">
@@ -28,7 +32,7 @@
               <button id="0" onclick="btnClick(this.id)">0</button>
             </div>
             <div class="flex-container-2">
-              <button id="q">q</button>
+              <button id="q" onclick="btnClick(this.id)">q</button>
               <button id="w" onclick="btnClick(this.id)">w</button>
               <button id="e" onclick="btnClick(this.id)">e</button>
               <button id="r" onclick="btnClick(this.id)">r</button>
@@ -69,14 +73,14 @@
             </div>
           </div>
           <div class="flex-container-6">
-            <button id="caps-lock">Caps Lock</button>
-            <button id="shift">Shift</button>
+            <button id="caps-lock" onclick="capsLock()">Caps Lock</button>
+            <button id="shift" onclick="shiftf()">Shift</button>
           </div>
         </div>
         <div class="flex-wrapper-4">
-            <button id="space" onclick="space()">Space</button>
-            <button id="ok" onclick="btnOk()">Ok</button>
-            <button>44</button>
+          <button id="space" onclick="space()">Space</button>
+          <button id="ok" onclick="btnOk()">Ok</button>
+          <button id="Enter" onclick="enter()">Enter</button>
         </div>
       </div>
     </div>
